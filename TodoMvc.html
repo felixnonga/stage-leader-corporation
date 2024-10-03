@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Ma Todo List</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Ajouter une tâche..." required>
+            <button type="submit">Ajouter</button>
+        </form>
+        <div class="filters">
+            <button data-filter="all">Toutes</button>
+            <button data-filter="active">Actives</button>
+            <button data-filter="completed">Complétées</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
